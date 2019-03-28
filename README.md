@@ -24,7 +24,7 @@ npm install
 
 After this, follow the link:
 
-https://flts.cc/WlQUq
+https://flts.cc/bfi0H
 
 **Accept everything**, and copy the access token from adress line.
 
