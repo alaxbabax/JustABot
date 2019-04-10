@@ -23,7 +23,7 @@ console.log("Longpoll started successfull!");
 vk.on('message', (event, msg) => {
 
     // Check if message body contains any keywords
-    if(!words.hasOwnProperty(msg.body.toLowerCase())) return;
+    if(!words.hasOwnProperty(msg.body.toLowerCase()) || msg.out) return;
 
     // If true, send the message with text, which specified in beginning of code
     msg.send(words[msg.body.toLowerCase()]);
