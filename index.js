@@ -12,12 +12,8 @@ let words = {
 var VK = require("VK-Promise"),
     vk = new VK(" < token here > "); // place token in quotes
 
-console.log("Auth successfull!");
-
 // Starting longpoll server
 vk.longpoll.start();
-
-console.log("Longpoll started successfull!");
 
 // Callback function
 vk.on('message', (event, msg) => {
